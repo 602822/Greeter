@@ -1,0 +1,24 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button Content="Button" HorizontalAlignment="Center" Margin="0,244,0,0" VerticalAlignment="Top" Height="38" Width="122" RenderTransformOrigin="0.62,1.262" Click="Button_Click"/>
+        <Label x:Name="greetingText" Content="" HorizontalAlignment="Center" Margin="0,111,0,0" VerticalAlignment="Top" Height="41" Width="420" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Yu Gothic UI Semibold" FontSize="20"/>
+        <Label Content="Enter your name here: " HorizontalAlignment="Left" Margin="201,180,0,0" VerticalAlignment="Top" Height="37" Width="139" RenderTransformOrigin="1.294,0.626"/>
+        <TextBox x:Name="nameFromUser" HorizontalAlignment="Center" Margin="0,180,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Height="37" TextChanged="TextBox_TextChanged" RenderTransformOrigin="0.5,0.5">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="-0.313"/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="-0.328"/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+    </Grid>
+</Window>
